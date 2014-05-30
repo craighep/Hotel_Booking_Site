@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Hotel Booking</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	</head>
+	
+	<body>
+		<div id="header">
+			<ul id="navigation">
+				<li>
+					<a href="index.html" id="home">Home</a>
+				</li>
+				<li>
+					<a href="#" id="email">Email</a>
+				</li>
+				<li>
+					<a href="cart.html" id="">Visit Cart (2)</a>
+				</li>
+			</ul>
+			<p>			<p>Welcome back Guest. <a href="login.html">Log In</a></p>
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"/></a>
+			<ul class="navigation">
+				<li class="selected first">
+					<a href="search.html">Establishments</a>
+				</li>
+				<li>
+					<a href="#">Prepare for your Visit</a>
+				</li>
+			</ul>
+		    <div id="featured">
+				<div class="first">
+					<ul>
+						<li class="selected first">
+							<a href="search.html">Featured Establishments</a>
+							<div>
+								<a href="search.html"><img src="images/hotel.jpg" alt=""/></a>
+								<p>This site provides an easy aand effective way of searching and booking a hotel. It also provides a marketplace/ middle man position that allows clients to advertise and update establishments.</p>
+							</div>
+					
+					</ul>
+				</div>
+				<div>
+					<h3>Find Hotels</h3>
+					<form action="">
+						<table>
+						<tr>
+						<td>Arriving:</td>
+						<td><input type="date" id="datenow" name="datenow"></td>
+						</tr>
+						<tr>
+						<td>Departing:</td>
+						<td><input type="date" id="datenow2" name="datenow2"></td>
+						</tr>
+						<tr>
+						<td>Location Search:</td>
+						<td><input type="search" name=""></td>
+						</tr>
+						<tr>
+						</table>
+						<input type="submit"onClick="">
+						</form>
+					<div>
+						<h3>Already Booked?</h3>
+						<ul>
+							<li>
+								<a href="#">Link 1</a>
+								<p>Helpful information could go here. A link to an instructional page etc.</p>
+							</li>
+							<li>
+								<a href="#">Link 2</a>
+								<p>Helpful information could go here. A link to an instructional page etc.</p>
+							</li>
+							<li>
+								<a href="#">Link 3</a>
+								<p>Helpful information could go here. A link to an instructional page etc.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div id="content">
+			<div>
+				<div class="first">
+					<h2>Travellers Log In</h2>
+					<ul>						
+						<li>
+							<fieldset>
+							<legend>Already Have An Account?</legend>
+							Username: <input type="text">
+							<br>
+							Password: &nbsp;<input type="password">
+							<hr>
+							<a href="deals.html" class="details">Log In</a>
+							</fieldset>
+						</li>
+						<br>
+						<li>
+							<fieldset>
+							<legend>Dont? Register Here</legend>
+							Full Name: <br><input type="text">
+							<br>
+							Username: <br><input type="password">
+							<br>
+							Password: <br><input type="password">
+							<br>
+							Confirm Password: <br><input type="password">
+							<br>
+							Address Line 1:<br><input type="password">
+							<br>
+							Postcode: <br><input type="password">
+							<br>
+							Email: <br><input type="password">
+							<hr>
+							<a href="deals.html" class="register">Register</a>
+							</fieldset>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2>Clients Log In</h2>
+					<ul>
+						<li>
+							<fieldset>
+							<legend>Already have an account?</legend>
+							Username: <input type="text">
+							<br>
+							Password: &nbsp;<input type="password">
+							<hr>
+							<a href="deals.html" class="details">Log In</a>
+							</fieldset>
+						</li><br>
+						<li>
+							<fieldset>
+							<legend>Request A Client Account</legend>
+							Username: <br><input type="password">
+							<br>
+							Password: <br><input type="password">
+							<br>
+							Confirm Password: <br><input type="password">
+							<br>
+							Email: <br><input type="password">
+							<hr>
+							<a href="deals.html" class="reqregister">Request Account</a>
+							</fieldset>
+						</li>
+					</ul>
+				</div>
+				<div id="news">
+					<div>
+						<h2>Get Updated</h2>
+					<a href="">Follow us <font>Twitter</font></a>
+					<a href="">Like us in <font>Facebook</font></a>
+					<a href="">Visit our <font>Blog</font></a>
+					<a href="">Watch on <font>YouTube</font></a>
+					<p>Always keep updated with the latest rooms and etsablishment informaation</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">About this site</a></li>
+
+				</ul>
+				<ul>
+					<li><a href="#">Other Link</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+				
+				
+				<p>&#169; Copyright <a href="http://www.craighep.co.uk">Craig Heptinstall </a>2013. All Rights Reserved.</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+    var currentDt = new Date();
+    var mm = currentDt.getMonth() + 1;
+    var dd = currentDt.getDate();
+    var yyyy = currentDt.getFullYear(); 
+    if (mm >9){
+    var date = yyyy+ '-' + mm+ '-' + dd;
+    dd++;
+    var date2 = yyyy+ '-' + mm+ '-' + dd;
+	}
+	else{
+		var date = yyyy+ '-' + '0'+ mm+ '-' + dd;
+		dd++;
+		var date2 = yyyy+ '-' + '0'+ mm+ '-' + dd;
+		
+	}
+      document.getElementById("datenow").value = date;
+       document.getElementById("datenow2").value = date2;
+
+</script>
+</html>  
